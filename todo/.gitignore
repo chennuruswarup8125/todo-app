@@ -1,9 +1,4 @@
 target/
 .idea/
 *.iml
-.mvn/
-!.mvn/wrapper/
-*.class
-*.jar
-*.war
 .env
