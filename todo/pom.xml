@@ -17,7 +17,7 @@
     <artifactId>todo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>todo</name>
-    <description>Todo CRUD App</description>
+    <description>Todo CRUD Spring Boot App</description>
 
     <properties>
         <java.version>21</java.version>
