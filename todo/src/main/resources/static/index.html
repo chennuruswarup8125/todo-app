@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+
+    <div class="app-header">
+        <h1>My Todos</h1>
+        <p id="dateLabel"></p>
+    </div>
+
+    <div class="stats">
+        <div class="stat"><div class="stat-num" id="totalCount">0</div><div class="stat-label">Total</div></div>
+        <div class="stat"><div class="stat-num accent" id="doneCount">0</div><div class="stat-label">Done</div></div>
+        <div class="stat"><div class="stat-num warning" id="pendCount">0</div><div class="stat-label">Pending</div></div>
+    </div>
+
+    <div class="form-card">
+        <div class="form-row">
+            <input id="titleInput" placeholder="What needs to be done?" />
+        </div>
+        <div class="form-row">
+            <input id="descInput" placeholder="Description (optional)" />
+            <button class="add-btn" onclick="createTodo()">+ Add</button>
+        </div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+        <button class="filter-btn" onclick="setFilter('pending', this)">Pending</button>
+        <button class="filter-btn" onclick="setFilter('done', this)">Done</button>
+    </div>
+
+    <ul class="todo-list" id="todoList"></ul>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
